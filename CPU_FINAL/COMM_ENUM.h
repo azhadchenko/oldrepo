@@ -1,0 +1,51 @@
+enum cpu_commands
+{
+    CPU_END = 255,
+
+    START_NO_ARG=50,
+    CPU_ADD=51,
+    CPU_SUB=52,
+    CPU_MUL=53,
+    CPU_DIV=54,
+    CPU_SIN=55,
+    CPU_COS=56,
+    CPU_TAN=57,
+    CPU_CTG=58,
+    CPU_POW=59,
+    CPU_SQRT=60,
+    CPU_IN=61,
+    CPU_OUT=62,
+    CPU_RET=63,
+    END_NO_ARG=99,
+
+    START_JUMPS=100,
+    CPU_JMP = 101,
+    CPU_JE = 102,
+    CPU_JNE = 103,
+    CPU_JA = 104,
+    CPU_JAE = 105,
+    CPU_JB = 106,
+    CPU_JBE = 107,
+    CPU_CALL = 108,
+    END_JUMPS=149,
+
+    CPU_PUSH=254,
+
+    START_PUSH=150,
+    CPU_PUSH_AX=152,
+    CPU_PUSH_BX=153,
+    CPU_PUSH_CX=154,
+    CPU_PUSH_DX=155,
+    CPU_PUSH_BP=156,
+    CPU_PUSH_SP=157,
+    END_PUSH=199,
+
+    START_POP = 200,
+    CPU_POP_AX = 201,
+    CPU_POP_BX = 202,
+    CPU_POP_CX = 203,
+    CPU_POP_DX = 204,
+    CPU_POP_BP = 205,
+    CPU_POP_SP = 206,
+    END_POP = 249
+};

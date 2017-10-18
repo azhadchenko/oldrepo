@@ -1,0 +1,6 @@
+SET_COMMAND_POP(AX, {object->ax=pop(&object->stack); comm_ptr++;})
+SET_COMMAND_POP(BX, {object->bx=pop(&object->stack); comm_ptr++;})
+SET_COMMAND_POP(CX, {object->cx=pop(&object->stack); comm_ptr++;})
+SET_COMMAND_POP(DX, {object->dx=pop(&object->stack); comm_ptr++;})
+SET_COMMAND_POP(BP, {object->bp=pop(&object->stack); comm_ptr++;})
+SET_COMMAND_POP(SP, {object->sp=pop(&object->stack); comm_ptr++;})
